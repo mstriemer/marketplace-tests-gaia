@@ -11,7 +11,7 @@ from marketplacetests.marketplace.app import Marketplace
 class Debug(Marketplace):
 
     _back_button_locator = (By.ID, 'nav-back')
-    _region_select_locator = (By.ID, 'region')
+    _region_select_locator = (By.NAME, 'region')
 
     def __init__(self, marionette):
         Base.__init__(self, marionette)
